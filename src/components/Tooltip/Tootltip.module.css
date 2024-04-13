@@ -1,0 +1,32 @@
+.tooltip {
+	display: flex;
+	padding: 10px;
+	justify-content: center;
+	margin-top: -15px;
+
+	opacity: 0.7;
+}
+
+.text_error, .text_info, .text_pending {
+	width: 300px;
+	padding: 15px;
+	justify-content: center;
+
+	border-radius: 10px;
+	text-align: center;
+
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.text_error {
+	background-color: #848484;
+}
+
+.text_info {
+	background-color: #85e2ff;
+}
+
+.text_pending {
+	background-color: #4169E1;
+}

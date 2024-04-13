@@ -1,0 +1,44 @@
+@charset "UTF-8";
+@keyframes slideFromTop {
+	0% {
+		top: -50vh;
+	}
+	100% {
+		top: 100px;
+	}
+}
+
+@keyframes darken {
+	0% {
+		background: 0;
+	}
+	100% {
+		background: rgba(0, 0, 0, 0.7);
+	}
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: "Roboto", sans-serif;
+	font-size: 62.5%;
+
+}
+
+.bodyAd {
+	background-image: url("../../../img/admin/background.jpg");
+	background-color: rgba(0, 0, 0, 0.5);
+	background-blend-mode: multiply;
+	background-size: cover;
+	background-attachment: fixed;
+	counter-reset: num;
+}
+
+.page_header__subtitle {
+	font-size: 1rem;
+	letter-spacing: 0.46em;
+}

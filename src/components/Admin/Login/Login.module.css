@@ -1,0 +1,167 @@
+@charset "UTF-8";
+@keyframes slideFromTop {
+	0% {
+		top: -50vh;
+	}
+	100% {
+		top: 100px;
+	}
+}
+
+@keyframes darken {
+	0% {
+		background: 0;
+	}
+	100% {
+		background: rgba(0, 0, 0, 0.7);
+	}
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: "Roboto", sans-serif;
+	font-size: 62.5%;
+}
+
+.bodyAd {
+	background-image: url("../../../img/admin/background.jpg");
+	background-color: rgba(0, 0, 0, 0.5);
+	background-blend-mode: multiply;
+	background-size: cover;
+	background-attachment: fixed;
+	counter-reset: num;
+}
+
+input[type='submit'] {
+	cursor: pointer;
+}
+
+.page__header {
+	padding: 35px 42px 35px 104px;
+	width: 972px;
+	margin: 0 auto;
+
+	color: #FFFFFF;
+	text-transform: uppercase;
+}
+
+.page__header .page_header__title {
+	margin: 0;
+	font-weight: 900;
+	font-size: 3.4rem;
+}
+
+.page__header .page_header__title span {
+	font-weight: 100;
+}
+
+.page__header .page_header__subtitle {
+	font-size: 1rem;
+	letter-spacing: 0.46em;
+}
+
+.login {
+	width: 480px;
+	margin: 0 auto;
+	position: relative;
+	background-color: rgba(234, 233, 235, 0.95);
+}
+
+.login__wrapper {
+	padding: 35px 104px;
+}
+
+.login__header {
+	position: relative;
+	box-sizing: border-box;
+	padding: 16px 104px;
+	background-color: #63536C;
+	color: #FFFFFF;
+}
+
+.login__title {
+	font-size: 2.2rem;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.login__label {
+	width: 100%;
+	margin-bottom: 0.8rem;
+	display: inline-block;
+	font-size: 1.2rem;
+	color: #848484;
+}
+
+.login__label:last-of-type {
+	margin-bottom: 0;
+}
+
+.login__input {
+	width: 100%;
+
+	display: block;
+	margin-top: 1px;
+	padding: 8px;
+	font-size: 1.6rem;
+	color: #000000;
+	border: 1px solid #b7b7b7;
+}
+
+.login__input::placeholder {
+	color: #848484;
+}
+
+.login__input:focus {
+	outline: 1px #CF87FF solid;
+	outline-offset: -1px;
+}
+
+.text_center {
+	text-align: center;
+}
+
+.login__button {
+	background-color: #16A6AF;
+	padding: 12px 32px;
+	margin-top: 17px;
+	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.24), 0 0 3px rgba(0, 0, 0, 0.12);
+	border-radius: 3px;
+	border: none;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 1.4rem;
+	transition-property: background-color;
+	transition-duration: .5s;
+	transition-timing-function: ease;
+}
+
+.login__button:hover, .login__button:focus {
+	background-color: #EEEAF1;
+	outline: none;
+}
+
+.login__button:active {
+	position: relative;
+	top: 2px;
+	background-color: #63536C;
+	color: #FFFFFF;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.75);
+}
+
+.login__button + .login__button {
+	margin-left: 12px;
+}
+
+.load_text_wrapper {
+	text-align: center;
+	color: #FFFFFF;
+
+	font-size: 16px;
+}

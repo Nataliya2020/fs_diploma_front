@@ -1,0 +1,19 @@
+@charset "UTF-8";
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: "Roboto", sans-serif;
+	font-size: 62.5%;
+}
+
+.bodyHome {
+	background-image: url("../../../img/client/background.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: right;
+}
+

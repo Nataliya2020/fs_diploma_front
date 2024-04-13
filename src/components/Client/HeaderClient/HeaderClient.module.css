@@ -1,0 +1,22 @@
+.page_header {
+	padding: 1.4rem;
+}
+
+.page_header__title {
+	margin: 0;
+	font-weight: 900;
+	font-size: 3.4rem;
+	color: #FFFFFF;
+	text-transform: uppercase;
+}
+
+.page_header__title span {
+	font-weight: 100;
+}
+
+@media screen and (min-width: 990px) {
+	.page_header {
+		width: 990px;
+		margin: auto;
+	}
+}

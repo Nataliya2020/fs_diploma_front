@@ -1,0 +1,24 @@
+.page_header {
+	width: 972px;
+	margin: 0 auto;
+}
+
+.page_header {
+	padding: 35px 42px 35px 104px;
+}
+
+.page_header {
+	color: #FFFFFF;
+	text-transform: uppercase;
+}
+
+.page_header .page_header__title {
+	margin: 0;
+	font-weight: 900;
+	font-size: 3.4rem;
+}
+
+.page_header .page_header__title span {
+	font-weight: 100;
+}
+
