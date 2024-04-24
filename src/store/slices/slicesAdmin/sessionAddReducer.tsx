@@ -65,7 +65,7 @@ export const fetchPostSessionElem = createAsyncThunk(
     try {
       let res = 401;
       if (localStorage.getItem('sanctumToken')) {
-        const result = await fetch('http://localhost:8000/api/session', {
+        const result = await fetch(`${process.env.REACT_APP_ADMIN_URL}/session`, {
           method: 'POST',
           credentials: 'include',
           headers: {

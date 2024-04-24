@@ -33,7 +33,7 @@ export const fetchPostLoginData = createAsyncThunk(
   'login/fetchPOSTLoginData',
   async function (loginData: {}, {rejectWithValue, dispatch}) {
     try {
-      const res = await fetch(`http://localhost:8000/api/login`, {
+      const res = await fetch(`${process.env.REACT_APP_ADMIN_URL}/login`, {
         method: 'POST',
         credentials: 'include',
         headers: {

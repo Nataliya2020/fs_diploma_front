@@ -38,7 +38,7 @@ export const fetchClientGetSession = createAsyncThunk(
     const signal = data.signal;
 
     try {
-      const result = await fetch(`http://localhost:8000/session?date=${data.date}`, {signal});
+      const result = await fetch(`${process.env.REACT_APP_CLIENT_URL}/session?date=${data.date}`, {signal});
       if (result.ok) {
         dispatch(setIsSuccessfulSessionAll(true));
         dispatch(setIsErroneousSessionAll(false));

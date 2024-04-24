@@ -82,7 +82,7 @@ export const fetchClientGetHalls = createAsyncThunk(
   'hall/fetchClientGetHall',
   async function (signal: AbortSignal | undefined, {rejectWithValue, dispatch}) {
     try {
-      const result = await fetch(`http://localhost:8000/hall`, {signal});
+      const result = await fetch(process.env.REACT_APP_CLIENT_URL + `/hall`, {signal});
 
       if (result.ok) {
         dispatch(setIsSuccessfulGetAllHalls(true));

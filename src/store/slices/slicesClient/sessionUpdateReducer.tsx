@@ -29,7 +29,7 @@ export const fetchSessionUpdate = createAsyncThunk(
   'sessionUpdate/fetchSessionUpdate',
   async function (data: SessionUpdateData, {rejectWithValue, dispatch}) {
     try {
-      const result = await fetch(`http://localhost:8000/session/${data.id}`, {
+      const result = await fetch(`${process.env.REACT_APP_CLIENT_URL}/session/${data.id}`, {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json; charset=UTF-8',

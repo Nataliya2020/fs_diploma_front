@@ -44,7 +44,7 @@ export const fetchClientGetFilmsElems = createAsyncThunk(
   'film/fetchClientGetFilmsElems',
   async function (signal: AbortSignal | undefined, {rejectWithValue, dispatch}) {
     try {
-      const result = await fetch(`http://localhost:8000/film`, {signal});
+      const result = await fetch(`${process.env.REACT_APP_CLIENT_URL}/film`, {signal});
 
       if (result.ok) {
         dispatch(setIsSuccessfulGetAllFilms(true));

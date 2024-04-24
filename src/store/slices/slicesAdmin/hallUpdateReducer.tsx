@@ -38,7 +38,7 @@ export const fetchUpdateHallElem = createAsyncThunk(
       let res = 401;
       const [updateHallData, id] = data;
       if (localStorage.getItem('sanctumToken')) {
-        const result = await fetch(`http://localhost:8000/api/hall/${id}`, {
+        const result = await fetch(`${process.env.REACT_APP_ADMIN_URL}/hall/${id}`, {
           method: 'PATCH',
           credentials: 'include',
           headers: {

@@ -1,5 +1,5 @@
 function getToken() {
-  return fetch('http://localhost:8000/sanctum/csrf-cookie', {
+  return fetch(process.env.REACT_APP_CLIENT_URL + '/sanctum/csrf-cookie', {
     headers: {
       'Accept': 'application/json'
     },

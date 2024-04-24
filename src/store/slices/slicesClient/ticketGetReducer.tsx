@@ -52,7 +52,7 @@ export const fetchGetTicket = createAsyncThunk(
     const signal = data.signal;
 
     try {
-      const result = await fetch(`http://localhost:8000/ticket/${data.id}`, {signal});
+      const result = await fetch(`${process.env.REACT_APP_CLIENT_URL}/ticket/${data.id}`, {signal});
 
       if (result.ok) {
         const ticket = await result.json();

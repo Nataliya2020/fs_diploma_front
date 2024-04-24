@@ -27,7 +27,7 @@ export const fetchAddTicketSeats = createAsyncThunk(
   'ticketSeat/fetchAddTicketSeats',
   async function (dataTicket: TicketSeat, {rejectWithValue, dispatch}) {
     try {
-      const result = await fetch('http://localhost:8000/ticket_seats', {
+      const result = await fetch(`${process.env.REACT_APP_CLIENT_URL}/ticket_seats`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json; charset=UTF-8',

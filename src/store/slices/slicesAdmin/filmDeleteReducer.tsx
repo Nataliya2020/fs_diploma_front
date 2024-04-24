@@ -33,7 +33,7 @@ export const fetchDeleteFilmElem = createAsyncThunk(
     try {
       let res = 401;
       if (localStorage.getItem('sanctumToken')) {
-        const result = await fetch(`http://localhost:8000/api/film/${id}`, {
+        const result = await fetch(`${process.env.REACT_APP_ADMIN_URL}/film/${id}`, {
           method: 'DELETE',
           credentials: 'include',
           headers: {

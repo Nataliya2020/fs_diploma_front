@@ -39,7 +39,7 @@ export const fetchPostFilmElem = createAsyncThunk(
     try {
       let res = 401;
       if (localStorage.getItem('sanctumToken')) {
-        const result = await fetch('http://localhost:8000/api/film', {
+        const result = await fetch(`${process.env.REACT_APP_ADMIN_URL}/film`, {
           method: 'POST',
           credentials: 'include',
           headers: {

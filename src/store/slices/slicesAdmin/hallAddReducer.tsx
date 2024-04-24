@@ -33,7 +33,7 @@ export const fetchPOSTHallElem = createAsyncThunk(
     try {
       let res = 401;
       if (localStorage.getItem('sanctumToken')) {
-        const result = await fetch('http://localhost:8000/api/hall', {
+        const result = await fetch(`${process.env.REACT_APP_ADMIN_URL}/hall`, {
           method: 'POST',
           credentials: 'include',
           headers: {

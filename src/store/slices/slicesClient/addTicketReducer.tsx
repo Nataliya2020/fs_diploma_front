@@ -43,7 +43,7 @@ export const fetchAddTicket = createAsyncThunk(
   'ticketData/fetchAddTicket',
   async function (ticketData: {}, {rejectWithValue, dispatch}) {
     try {
-      const result = await fetch('http://localhost:8000/ticket', {
+      const result = await fetch(`${process.env.REACT_APP_CLIENT_URL}/ticket`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json; charset=UTF-8',
